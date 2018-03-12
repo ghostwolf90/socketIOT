@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3F3ABA3520560AD5003E1361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3420560AD5003E1361 /* AppDelegate.swift */; };
-		3F3ABA3720560AD5003E1361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3620560AD5003E1361 /* ViewController.swift */; };
 		3F3ABA3A20560AD5003E1361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3820560AD5003E1361 /* Main.storyboard */; };
 		3F3ABA3C20560AD5003E1361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3B20560AD5003E1361 /* Assets.xcassets */; };
 		3F3ABA3F20560AD5003E1361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3D20560AD5003E1361 /* LaunchScreen.storyboard */; };
 		3F3ABA4A20560AD6003E1361 /* socketIOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA4920560AD6003E1361 /* socketIOTTests.swift */; };
 		3F3ABA5520560AD6003E1361 /* socketIOTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA5420560AD6003E1361 /* socketIOTUITests.swift */; };
+		3F3ABA6320561022003E1361 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA6220561022003E1361 /* SettingViewController.swift */; };
+		3F3ABA6420561022003E1361 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA6220561022003E1361 /* SettingViewController.swift */; };
+		3F3ABA6620561046003E1361 /* IOTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA6520561046003E1361 /* IOTViewController.swift */; };
+		3F3ABA6720561046003E1361 /* IOTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA6520561046003E1361 /* IOTViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		3F3ABA3120560AD5003E1361 /* socketIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socketIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3ABA3420560AD5003E1361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F3ABA3620560AD5003E1361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F3ABA3920560AD5003E1361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F3ABA3B20560AD5003E1361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3ABA3E20560AD5003E1361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		3F3ABA5020560AD6003E1361 /* socketIOTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socketIOTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3ABA5420560AD6003E1361 /* socketIOTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socketIOTUITests.swift; sourceTree = "<group>"; };
 		3F3ABA5620560AD6003E1361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3ABA6220561022003E1361 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		3F3ABA6520561046003E1361 /* IOTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				3F3ABA3420560AD5003E1361 /* AppDelegate.swift */,
-				3F3ABA3620560AD5003E1361 /* ViewController.swift */,
+				3F3ABA6520561046003E1361 /* IOTViewController.swift */,
+				3F3ABA6220561022003E1361 /* SettingViewController.swift */,
 				3F3ABA3820560AD5003E1361 /* Main.storyboard */,
 				3F3ABA3B20560AD5003E1361 /* Assets.xcassets */,
 				3F3ABA3D20560AD5003E1361 /* LaunchScreen.storyboard */,
@@ -259,8 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F3ABA3720560AD5003E1361 /* ViewController.swift in Sources */,
 				3F3ABA3520560AD5003E1361 /* AppDelegate.swift in Sources */,
+				3F3ABA6620561046003E1361 /* IOTViewController.swift in Sources */,
+				3F3ABA6320561022003E1361 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3ABA4A20560AD6003E1361 /* socketIOTTests.swift in Sources */,
+				3F3ABA6720561046003E1361 /* IOTViewController.swift in Sources */,
+				3F3ABA6420561022003E1361 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
