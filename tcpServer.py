@@ -6,6 +6,7 @@ from time import ctime
 serverClient = socket(AF_INET, SOCK_STREAM)
 
 HOST='10.0.1.176'
+#HOST='172.20.10.8'
 PORT=8808
 BUFSIZ=1024
 ADDR=(HOST, PORT)

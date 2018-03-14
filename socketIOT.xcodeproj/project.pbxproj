@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		02314E5FE9050568E58A3A19 /* Pods_socketIOTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4580B5FF6D004E35034B0E4 /* Pods_socketIOTTests.framework */; };
+		3F2D38732058366E0030C81B /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D38722058366E0030C81B /* SocketModel.swift */; };
+		3F2D38742058366E0030C81B /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2D38722058366E0030C81B /* SocketModel.swift */; };
 		3F3ABA3520560AD5003E1361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3420560AD5003E1361 /* AppDelegate.swift */; };
 		3F3ABA3A20560AD5003E1361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3820560AD5003E1361 /* Main.storyboard */; };
 		3F3ABA3C20560AD5003E1361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3ABA3B20560AD5003E1361 /* Assets.xcassets */; };
@@ -43,6 +45,9 @@
 		00389471039FA4FD33158356 /* Pods_socketIOT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socketIOT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AA6961EA83E4A2CFABB5EF /* Pods_socketIOTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socketIOTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		144C5E748D2EFB77A3A2EEC4 /* Pods-socketIOT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socketIOT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socketIOT/Pods-socketIOT.debug.xcconfig"; sourceTree = "<group>"; };
+		3F2D38722058366E0030C81B /* SocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketModel.swift; sourceTree = "<group>"; };
+		3F2D3875205846200030C81B /* socketIOT-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "socketIOT-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F2D3876205846200030C81B /* socketIOTTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "socketIOTTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		3F3ABA3120560AD5003E1361 /* socketIOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = socketIOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3ABA3420560AD5003E1361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F3ABA3920560AD5003E1361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,6 +123,7 @@
 		3F3ABA3320560AD5003E1361 /* socketIOT */ = {
 			isa = PBXGroup;
 			children = (
+				3F2D38722058366E0030C81B /* SocketModel.swift */,
 				3F3ABA3420560AD5003E1361 /* AppDelegate.swift */,
 				3F3ABA6520561046003E1361 /* IOTViewController.swift */,
 				3F3ABA6220561022003E1361 /* SettingViewController.swift */,
@@ -125,6 +131,8 @@
 				3F3ABA3B20560AD5003E1361 /* Assets.xcassets */,
 				3F3ABA3D20560AD5003E1361 /* LaunchScreen.storyboard */,
 				3F3ABA4020560AD5003E1361 /* Info.plist */,
+				3F2D3875205846200030C81B /* socketIOT-Bridging-Header.h */,
+				3F2D3876205846200030C81B /* socketIOTTests-Bridging-Header.h */,
 			);
 			path = socketIOT;
 			sourceTree = "<group>";
@@ -247,10 +255,12 @@
 				TargetAttributes = {
 					3F3ABA3020560AD5003E1361 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					3F3ABA4420560AD6003E1361 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3F3ABA3020560AD5003E1361;
 					};
@@ -471,6 +481,7 @@
 			files = (
 				3F3ABA3520560AD5003E1361 /* AppDelegate.swift in Sources */,
 				3F3ABA6620561046003E1361 /* IOTViewController.swift in Sources */,
+				3F2D38732058366E0030C81B /* SocketModel.swift in Sources */,
 				3F3ABA6320561022003E1361 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +492,7 @@
 			files = (
 				3F3ABA4A20560AD6003E1361 /* socketIOTTests.swift in Sources */,
 				3F3ABA6720561046003E1361 /* IOTViewController.swift in Sources */,
+				3F2D38742058366E0030C81B /* SocketModel.swift in Sources */,
 				3F3ABA6420561022003E1361 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,12 +652,15 @@
 			baseConfigurationReference = 144C5E748D2EFB77A3A2EEC4 /* Pods-socketIOT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VS4GFB76H;
 				INFOPLIST_FILE = socketIOT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laibit.socketIOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "socketIOT/socketIOT-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -656,12 +671,14 @@
 			baseConfigurationReference = F887CF21C98DDC2DD425DC53 /* Pods-socketIOT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VS4GFB76H;
 				INFOPLIST_FILE = socketIOT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laibit.socketIOT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "socketIOT/socketIOT-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -673,12 +690,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VS4GFB76H;
 				INFOPLIST_FILE = socketIOTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laibit.socketIOTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "socketIOT/socketIOTTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/socketIOT.app/socketIOT";
@@ -691,12 +711,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4VS4GFB76H;
 				INFOPLIST_FILE = socketIOTTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laibit.socketIOTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "socketIOT/socketIOTTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/socketIOT.app/socketIOT";

@@ -30,10 +30,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="127.0.0.1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VX0-ey-VQt">
-                                <rect key="frame" x="16" y="77" width="120" height="30"/>
+                                <rect key="frame" x="16" y="77" width="135" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kwn-Og-lXV"/>
-                                    <constraint firstAttribute="width" constant="120" id="xCn-l3-XfR"/>
+                                    <constraint firstAttribute="width" constant="135" id="xCn-l3-XfR"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -46,12 +46,15 @@
                                 <state key="normal" title="連線">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="connectPress:" destination="Par-t0-HHe" eventType="touchUpInside" id="msH-A1-Rq2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="8888" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-Fa-HlZ">
-                                <rect key="frame" x="148" y="77" width="65" height="30"/>
+                                <rect key="frame" x="164" y="77" width="65" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0x1-zD-aZV"/>
-                                    <constraint firstAttribute="width" constant="65" id="blq-IF-LjN"/>
+                                    <constraint firstAttribute="height" constant="30" id="wds-Sb-ObV"/>
+                                    <constraint firstAttribute="width" constant="65" id="zHB-l1-c5z"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -60,19 +63,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="qfx-Fa-HlZ" firstAttribute="leading" secondItem="VX0-ey-VQt" secondAttribute="trailing" constant="12" id="0Tl-Oa-NW4"/>
                             <constraint firstItem="n1x-Gz-5xh" firstAttribute="trailing" secondItem="8lr-pV-jU5" secondAttribute="trailing" constant="16" id="6mP-ey-kcR"/>
                             <constraint firstItem="ggt-Gb-0bQ" firstAttribute="leading" secondItem="n1x-Gz-5xh" secondAttribute="leading" constant="16" id="All-rC-crS"/>
+                            <constraint firstItem="qfx-Fa-HlZ" firstAttribute="leading" secondItem="VX0-ey-VQt" secondAttribute="trailing" constant="13" id="BXO-Mo-XUG"/>
                             <constraint firstItem="VX0-ey-VQt" firstAttribute="top" secondItem="ggt-Gb-0bQ" secondAttribute="bottom" constant="8" id="D5y-3F-lUA"/>
                             <constraint firstItem="ggt-Gb-0bQ" firstAttribute="top" secondItem="n1x-Gz-5xh" secondAttribute="top" constant="25" id="De7-ws-T7x"/>
                             <constraint firstItem="8lr-pV-jU5" firstAttribute="leading" secondItem="n1x-Gz-5xh" secondAttribute="leading" constant="16" id="FpV-hs-ygm"/>
+                            <constraint firstItem="qfx-Fa-HlZ" firstAttribute="top" secondItem="n1x-Gz-5xh" secondAttribute="top" constant="57" id="qkl-ag-Pdo"/>
                             <constraint firstItem="VX0-ey-VQt" firstAttribute="leading" secondItem="n1x-Gz-5xh" secondAttribute="leading" constant="16" id="rHi-zb-sde"/>
-                            <constraint firstItem="qfx-Fa-HlZ" firstAttribute="top" secondItem="n1x-Gz-5xh" secondAttribute="top" constant="57" id="t6y-0Z-5hR"/>
                             <constraint firstItem="8lr-pV-jU5" firstAttribute="top" secondItem="VX0-ey-VQt" secondAttribute="bottom" constant="28" id="vml-Aa-ZEO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="n1x-Gz-5xh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" id="nJs-iV-8Is"/>
+                    <connections>
+                        <outlet property="connectBtn" destination="8lr-pV-jU5" id="5zr-Ww-8af"/>
+                        <outlet property="ipLabel" destination="VX0-ey-VQt" id="VTa-dI-4kt"/>
+                        <outlet property="portLabel" destination="qfx-Fa-HlZ" id="akT-gB-yLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1K-dF-fEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,6 +93,16 @@
                     <view key="view" contentMode="scaleToFill" id="vcu-fk-TPm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPr-sr-xrW">
+                                <rect key="frame" x="16" y="38" width="163" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hello"/>
+                                <connections>
+                                    <action selector="HelloPress:" destination="P3Q-wz-4Zc" eventType="touchUpInside" id="cAw-th-Skg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UpL-wX-6xH"/>
                     </view>
@@ -92,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdl-xK-g8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="-229"/>
+            <point key="canvasLocation" x="680.79999999999995" y="-229.83508245877064"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="iMb-Wl-zbo">
