@@ -36,13 +36,13 @@ class SocketModel: NSObject {
 extension SocketModel: GCDAsyncSocketDelegate {
     
     func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
-        print("连接服务器" + host)
+        print("連接到Server" + host)
         self.socket?.readData(withTimeout: -1, tag: 0)
     }
 
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         let msg = String(data: data as Data, encoding: String.Encoding.utf8)
-        print(msg!)
+        print("收到 \(msg!)")
         socket?.readData(withTimeout: -1, tag: 0)
     }
     
